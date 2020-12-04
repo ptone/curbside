@@ -1,4 +1,4 @@
-Follow instructions in the editor window (if not open, open install-cloudshell.md).
+Follow instructions in the editor window (it should open in a moment, if not open install-cloudshell.md).
 
 Use this terminal for any commands when instructed
 

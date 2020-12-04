@@ -10,11 +10,13 @@ There should be two URLs in the terminal part of Cloud Shell, they should be cli
 
 
 ### Setting Up Firebase Auth
-The first is to the auth section of the Firebase Console. Opening that should you bring to a screen where you can enable providers. (you may need to click a getting started button).
+The first is to the auth section of the Firebase Console. Opening that should you bring to a screen where you can click the "Get Started" button, and then enable providers.
 
 Here you want to enable the email/password provider.
+
 ![enable-email](images/enable-email.png)
 
+You can then close this Firebase console tab.
 
 In the small business environment where this solution is used, it is common to have shared workstations where applications are logged into once, then shared among users.
 
