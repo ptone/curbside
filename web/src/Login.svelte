@@ -103,8 +103,6 @@
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMEaFPfyFg2QjoLPXyQUOqPC4vdJvFM0MXoKYcwoK7Uc579TwFLeLtyIE69dX0meHfz1FqAta5-ZFr/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
     <br />
-    <!-- Currently being provided free for interested and qualified small businesses, If you are interested in using this software, please fill out <a href="https://forms.gle/5EC1iUKDLsrV9D6R7">this form</a>, thank you. -->
-    Currently being provided free by invite for a limited number of qualified small businesses. <i>developed by <a href="https://lcah.com">LCAH</a></i>
     <hr />
     <h2>Login</h2>
     Email: <input bind:value={email}>

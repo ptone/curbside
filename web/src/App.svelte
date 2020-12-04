@@ -30,6 +30,6 @@
 
 	<Login />
 
-	<a href="https://docs.google.com/document/d/e/2PACX-1vSDlIw4oP8P67rQhtV0reSYk0pbT7dezvmZbet4xX4AwEJjJU_hZSZ-VmR7J6XCF0sqtYEzKMi_8Qo8/pub">Documentation</a> 
+	<a href="https://github.com/ptone/curbside/blob/main/docs/userguide.md">Documentation</a> 
 
 </main>
