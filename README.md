@@ -1,6 +1,6 @@
 # Curbside Contact
 
-![overview](docs/images/overview.png)
+[![overview](docs/images/overview.png)](https://docs.google.com/presentation/d/e/2PACX-1vRMEaFPfyFg2QjoLPXyQUOqPC4vdJvFM0MXoKYcwoK7Uc579TwFLeLtyIE69dX0meHfz1FqAta5-ZFr/pub?start=false&loop=false&delayms=3000)
 
 Curbside Contact is a web application allowing business to interact with customers via SMS for the purposes of coordinating services when:
 
@@ -8,6 +8,7 @@ Curbside Contact is a web application allowing business to interact with custome
 *   a customer is not able to come inside the building (during Covid19, maybe beyond)
 *   the business wants an asynchronous way for many customers to be able to attend to this need, without further clogging what might be busy phone lines.
 
+See more overview in [this presentation](https://docs.google.com/presentation/d/e/2PACX-1vRMEaFPfyFg2QjoLPXyQUOqPC4vdJvFM0MXoKYcwoK7Uc579TwFLeLtyIE69dX0meHfz1FqAta5-ZFr/pub?start=false&loop=false&delayms=3000)
 
 This application is designed for small businesses of all types. The software is designed to be set up by an SMB IT consulting and is designed to be multi-tenant. No coding skills are required.
 One instance of the system can support multiple businesses. The cloud infrastructure is completely serverless and fully mangaged. SMS fees represent the main cost of this system.
