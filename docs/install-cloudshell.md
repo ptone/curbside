@@ -12,4 +12,4 @@ Save this file after those changes, and in the terminal section of the Cloud She
 
 This file has comments that explain each step - if you wish to perform them one by one.
 
-Once the install is complete 
+Once the install is complete, additional instructions should open here, otherwise click [this](install_complete.md)
