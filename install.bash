@@ -1,6 +1,6 @@
 source env.bash
 gcloud config set project $GOOGLE_CLOUD_PROJECT
-gcloud services enable run.googleapis.com   
+gcloud services enable run.googleapis.com firestore.googleapis.com   
 
 # Create an App Engine app - this will not be used, but is required to set up Firestore database
 gcloud app create --region=us-central --project $GOOGLE_CLOUD_PROJECT
@@ -52,11 +52,12 @@ gcloud run deploy app \
 pip3 install -r requirements.txt
 python3 update_deploy.py 
 
-cloudshell edit docs/install_complete.md 
+cloudshell edit docs/install-complete.md 
 
 URL=`gcloud run services describe app --platform managed --region us-central1 --format='value(status.url)'`
 
-gcloud run services describe app --platform managed --region us-central1 --format='value(status.url)'
 clear
 echo "Install Completed"
 echo "Please open https://console.firebase.google.com/u/0/project/$GOOGLE_CLOUD_PROJECT/authentication/providers"
+echo "Application URL:"
+echo $URL

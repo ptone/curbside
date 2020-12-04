@@ -20,6 +20,12 @@ In the small business environment where this solution is used, it is common to h
 
 The email you assign to users can be considered a username, and does not need to receive any email. Currently the application does not support any password recovery by email, so it is only the system-admin that sets and refreshes passwords.
 
+There are a couple preparation steps. This particular task requires a different type of authentication. Enter this command, then follow the generated link to login and get the auth code to paste back in the terminal:
+
+    gcloud auth application-default login -q
+
+Second - the database may not respond to writes until it has been opened once, so visit the database page <a href="https://console.cloud.google.com/firestore/data" target="_blank">here</a>
+
 Next, in the terminal, enter the following command to create a dummy users to try the login:
 
     python3 set_tenant.py -e fake@example.com -n "+12223334444"
@@ -72,7 +78,7 @@ Note that you can only have a given user associated with one number, but you can
 
 You can now login with this user, and then try sending an SMS msg to the Twilio number and you should see a live response in the web UI.
 
-From this point, see the admin and user-guides for the behavior of the application.
+From this point, see the admin and user-guide ([user](userguide.md) [admin](admin-user.md)) for the behavior of the application.
 
 ### Adding additional tenants
 
