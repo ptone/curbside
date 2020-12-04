@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /settings/{settingid} {
+    	allow read, write: if (request.auth.uid == settingid)
+      allow read, write: if (request.auth.token.curbside_number == settingid)
+      allow read: if (settingid == "system")
+    }
+    match /statuses/{statusid} {
+      allow read, write, create: if (request.auth.token.curbside_number == resource.data.tenant)
+      allow read, write: if (request.auth.token.curbside_number == request.resource.data.tenant)
+    }
+    match /sessions/{statusid} {
+      allow read, write: if (request.auth.token.curbside_number == resource.data.tenant)
+
+    }
+    match /caller_ids/{sender} {
+    	allow read: if request.auth.uid != null;
+    }
+  }
+}
