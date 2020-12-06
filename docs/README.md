@@ -6,3 +6,4 @@ If you are looking to configure the behavior of the application, such as setting
 
 If you are looking to set up an instance of Curbside, or configure new numbers, see the [System Admin guide](admin-system.md)
 
+The admin guide also has details on the [solution architecture](https://github.com/ptone/curbside/blob/main/docs/admin-system.md#architecture-and-security).
