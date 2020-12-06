@@ -19,10 +19,11 @@ Note: You will need to trust this repo when prompted for install to proceed.
 
 ## Administrative tasks
 
-support via group...
-https://groups.google.com/g/curbside-contact-dev
+Please note, this solution is provided as-is with no official support.
 
-issues for bugs
+Bugs, technical defects, and feature requests can be reported through [Github issues](https://github.com/ptone/curbside/issues) on this repo.
+
+For community based support, please use this [Google Group](https://groups.google.com/g/curbside-contact-dev).
 
 ### Adding additional tenants
 
@@ -60,9 +61,11 @@ A user can only be associated with one tenant. An existing user can be associate
 
     python3 set_tenant.py --no-bootstrap -u xxyyzz -n "+1__________"
 
-### Removing tenant - see delete
+### Removing tenant
 
 There is not particular automation for removing a single tenant or data from the system. You can release a number in Twilio, and delete the user in Firebase Auth console.
+
+See notes about deleting and shutting down below.
 
 ### Using a custom domain
 
