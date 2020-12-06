@@ -80,10 +80,9 @@ Note that you can only have a given user associated with one number, but you can
 
 You can now login with this user, and then try sending an SMS msg to the Twilio number and you should see a live response in the web UI.
 
+
+It is recommended you make a copy of your settings that will survive any upgrades:
+
+        cp env.bash env.prod.bash
+        
 From this point, see the admin and user-guide ([user](userguide.md) [admin](admin-user.md)) for the behavior of the application.
-
-### Adding additional tenants
-
-You can buy additional numbers, and associate with the existing messaging app.
-
-You can then add the initial user for each new number.
