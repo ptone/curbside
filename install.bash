@@ -1,6 +1,6 @@
 source env.bash
 gcloud config set project $GOOGLE_CLOUD_PROJECT
-gcloud services enable run.googleapis.com firestore.googleapis.com   
+gcloud services enable run.googleapis.com firestore.googleapis.com appengine.googleapis.com  
 
 # Create an App Engine app - this will not be used, but is required to set up Firestore database
 gcloud app create --region=us-central --project $GOOGLE_CLOUD_PROJECT
@@ -12,7 +12,7 @@ firebase projects:addfirebase $GOOGLE_CLOUD_PROJECT
 gcloud firestore databases create --project $GOOGLE_CLOUD_PROJECT --region us-central
 
 # Deploy the Firestore Rules and Indexes
-firebase deploy --only firestore
+firebase deploy --only firestore --project $GOOGLE_CLOUD_PROJECT
 
 
 # Create a Firebase webapp so we can retrieve configuration
