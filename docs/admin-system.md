@@ -102,6 +102,8 @@ This will be documented as the solution is updated and upgrades are available.
 
 The system is built on the fully managed services of [Google Cloud Platform](https://cloud.google.com) and messaging services of [Twilio](https://twilio.com) and is fully serverless.
 
+All webhook calls to the service are validated as being signed by Twilio.
+
 User credentials are managed in [Firebase Auth](https://firebase.google.com/products/auth). Firebase auth is used to directly authenticate users to the [Firestore database](https://cloud.google.com/firestore) for real-time display.
 
 This direct database connection is governed by [Firebase Security rules](https://firebase.google.com/docs/rules) (See file in this repo `firestore.rules`).
